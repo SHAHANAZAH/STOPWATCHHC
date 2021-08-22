@@ -16,10 +16,11 @@ function timeToString(time) {
   let formattedHH = hh.toString().padStart(2, "0");
   let formattedMM = mm.toString().padStart(2, "0");
   let formattedSS = ss.toString().padStart(2, "0");
+  let formattedMS = ms.toString().padStart(2, "0");
+
   
   
-  
-return `${formattedHH}:${formattedMM}:${formattedSS}`;
+return `${formattedHH}:${formattedMM}:${formattedSS}:${formattedMS}`;
 
 }//variables declaration
 let startTime;
@@ -48,7 +49,7 @@ function pause() {
 
 function reset() {
   clearInterval(timerInterval);
-  print("00:00:00");
+  print("00:00:00:00");
   elapsedTime = 0;
   showButton("PLAY");
 }
