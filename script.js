@@ -19,7 +19,7 @@ function timeToString(time) {
   let formattedMS = ms.toString().padStart(2, "0");
   
   
-return `${formattedHH}:${formattedMM}:${formattedSS}:&{formattedMS}`;
+return `${formattedHH}:${formattedMM}:${formattedSS}:${formattedMS}`;
 
 }//variables declaration
 let startTime;
